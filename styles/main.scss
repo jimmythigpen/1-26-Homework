@@ -6,8 +6,8 @@ body {
   margin: 0;
   background-color: #f5f5f1;
   font-family: Arial;
-}
 
+}
 header {
   position: relative;
   margin-bottom: 50px;
@@ -22,19 +22,19 @@ header {
     color: #d4562a;
     font-size: 50px;
   }
-}
 
+}
 .header-container {
   position: relative;
   left: 10%;
   width: 300px;
   height: 75px;
-}
 
+}
 .results-list {
   @include outer-container(730px);
-}
 
+}
 .listing {
   @include span-columns(4);
   @include omega(3n);
@@ -45,43 +45,43 @@ header {
   padding: 4px;
   width: 224px;
   height: 220px;
-}
 
+}
 p {
-  transition: transform .5s;
+  transition: transform 0.5s;
   margin: 0 0 7px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   color: #666;
   font-size: 12px;
-}
 
+}
 .image img {
-  transition: all .5s;
+  transition: all 0.5s;
   width: 100%;
-}
 
+}
 .cost {
   position: absolute;
   right: 9px;
   color: #74bf40;
   font-size: 12px;
-}
 
+}
 .shop {
   position: absolute;
   left: 4%;
   color: #b2b2b2;
   font-size: 12px;
-}
 
+}
 .dropdown {
   position: absolute;
   top: 29px;
   right: 10%;
-}
 
+}
 input {
   position: absolute;
   top: 26%;
@@ -95,23 +95,50 @@ input {
     outline: none;
     border: 1px solid #63b5cf;
   }
-}
 
+}
+#button {
+  position: absolute;
+  top: 27%;
+  left: 94%;
+  outline: rgb(255, 255, 255) none 0;
+  border-top: 1px solid rgb(84, 172, 199);
+  border-right: 1px solid rgb(76, 160, 186);
+  border-bottom: 1px solid rgb(57, 138, 157);
+  border-left: 1px solid rgb(76, 160, 186);
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0) -webkit-linear-gradient(top, rgb(152, 208, 224) 2%, rgb(104, 184, 209) 8%, rgb(79, 169, 198) 58%, rgb(79, 169, 198) 95%, rgb(76, 164, 192)) repeat scroll 0 0 / auto padding-box border-box;
+  cursor: pointer;
+  padding: 7px 15px 8px;
+  width: 82.046875px;
+  height: 37px;
+  min-height: 0;
+  border-collapse: collapse;
+  text-shadow: rgba(0, 0, 0, .14902) 0 -1px 0;
+  white-space: nowrap;
+  color: rgb(255, 255, 255);
+  font: normal normal bold normal 15px/17px Arial, Helvetica, sans-serif;
+
+  &:active {
+    background: #447c8c;
+  }
+
+}
 @media screen and (max-width: 725px) {
   .listing {
     @include span-columns(12);
-  }
 
+  }
   .results-list {
     max-width: 224px;
   }
-}
 
+}
 .listing:hover {
   p {
     transform: translate(0, 6px);
-  }
 
+  }
   .image img {
     transform: scale3d(1.1, 1.1, 1);
     border-radius: 4px;

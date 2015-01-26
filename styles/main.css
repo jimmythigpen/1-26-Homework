@@ -60,7 +60,7 @@ header {
     clear: left; }
 
 p {
-  transition: transform .5s;
+  transition: transform 0.5s;
   margin: 0 0 7px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -69,7 +69,7 @@ p {
   font-size: 12px; }
 
 .image img {
-  transition: all .5s;
+  transition: all 0.5s;
   width: 100%; }
 
 .cost {
@@ -100,6 +100,30 @@ input {
   input:focus {
     outline: none;
     border: 1px solid #63b5cf; }
+
+#button {
+  position: absolute;
+  top: 27%;
+  left: 94%;
+  outline: white none 0;
+  border-top: 1px solid #54acc7;
+  border-right: 1px solid #4ca0ba;
+  border-bottom: 1px solid #398a9d;
+  border-left: 1px solid #4ca0ba;
+  border-radius: 3px;
+  background: transparent -webkit-linear-gradient(top, #98d0e0 2%, #68b8d1 8%, #4fa9c6 58%, #4fa9c6 95%, #4ca4c0) repeat scroll 0 0/auto padding-box border-box;
+  cursor: pointer;
+  padding: 7px 15px 8px;
+  width: 82.046875px;
+  height: 37px;
+  min-height: 0;
+  border-collapse: collapse;
+  text-shadow: rgba(0, 0, 0, 0.14902) 0 -1px 0;
+  white-space: nowrap;
+  color: white;
+  font: normal normal bold normal 15px/17px Arial, Helvetica, sans-serif; }
+  #button:active {
+    background: #447c8c; }
 
 @media screen and (max-width: 725px) {
   .listing {
