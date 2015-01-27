@@ -6,7 +6,7 @@
   $(document).ready(function() {
 
     //
-    // links html element div with .results-list class
+    // links html element div with .results-list class, global VARs
     //
     var $list = $('.results-list');
     var sortedBy = "score";
@@ -33,10 +33,10 @@
         renderListings(updatedResults.results);
 
       });
+
       //
       // Sort Dropdown
       //
-
       $(".dropdown").change(function(sortStuff) {
 
         if ($(".dropdown option:selected").text() == "Lowest Price") {
@@ -48,9 +48,7 @@
 
         }
         updateURL();
-
       });
-
     }
 
     function renderListings(data) {
@@ -67,7 +65,6 @@
         $list.append(resultText);
       });
     }
-
   });
 
   function renderTemplate(name, data) {
@@ -77,5 +74,4 @@
     });
     return $template;
   }
-
 })();
